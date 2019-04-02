@@ -13,11 +13,7 @@
     <header>
       <h1>ALPHA BLOG</h1>
     </header>
-    <% flash.each do |name, msg| %>
-      <ul>
-        <li><%= msg%></li>
-      </ul>
-    <% end %>
+    <%= render "layouts/messages" %>
     <%= yield %>
     <footer>
       <p>&copy 2019 Franzi Grieser</p>
