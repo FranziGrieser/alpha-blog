@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:edit, :update, :show, :destroy]
+  before_action :set_article, only: %i[edit update show destroy]
   def index
     @articles = Article.all
   end
@@ -10,8 +10,7 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @article = Article.new(article_params)
@@ -32,8 +31,7 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @article.destroy
@@ -42,6 +40,7 @@ class ArticlesController < ApplicationController
   end
 
   private
+
   def set_article
     @article = Article.find(params[:id])
   end
