@@ -3,16 +3,17 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.5.1"
+ruby "2.6.2"
 
 gem "bootsnap", ">= 1.1.0", require: false
-gem "bootstrap-sass", "~> 3.3", ">= 3.3.6"
+gem 'bootstrap', '~> 4.3.1'
 gem "coffee-rails", "~> 4.2"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.2"
 gem "sass-rails", "~> 5.0"
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem "turbolinks", "~> 5"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
@@ -41,6 +42,3 @@ end
 group :production do
   gem "pg"
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
