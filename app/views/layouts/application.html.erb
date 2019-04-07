@@ -11,15 +11,11 @@
 
   <body>
     <%= render "layouts/navigation" %>
+    <%= render "layouts/messages" %>
     <div class="container">
-      <header>
-        <h1>ALPHA BLOG</h1>
-      </header>
-      <%= render "layouts/messages" %>
       <%= yield %>
-
     </div>
-      <footer>
+    <footer>
       <p>&copy 2019 Franzi Grieser</p>
     </footer>
   </body>
