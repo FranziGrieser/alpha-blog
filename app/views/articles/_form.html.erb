@@ -23,12 +23,13 @@
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <%= f.submit(class: "btn btn-default btn-s") %>
+          <%= f.submit(class: "btn btn-s btn-primary") %>
         </div>
       </div>
     <% end %>
-    <div class="col-xs-4 col-xs-offset-2">
-      <%= link_to "Back", articles_path %>
+    <div class="col-xs-4 col-xs-offset-4">
+      <%= link_to "Cancel and go back to all articles", articles_path,
+        class: "btn btn-xs btn-danger" %><br><br>
     </div>
   </div>
 </div>

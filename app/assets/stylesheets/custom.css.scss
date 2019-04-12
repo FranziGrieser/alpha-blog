@@ -56,6 +56,15 @@ $navbar-default-bg: #364f53;
   border-color: #73A6AD !important;
 }
 
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
 footer {
   flex-shrink: 0;
   // width: 100%;
