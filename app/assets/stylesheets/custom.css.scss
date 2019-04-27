@@ -82,6 +82,11 @@ $navbar-default-bg: #364f53;
   padding-bottom: 15px;
 }
 
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
 footer {
   flex-shrink: 0;
   // width: 100%;
