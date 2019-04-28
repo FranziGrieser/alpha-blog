@@ -6,7 +6,7 @@
         <div class="col-md-5 col-md-offset-4">
           <li>Created by:</li>
           <li>
-            <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+            <%= link_to gravatar_for(@article.user, size: 100), user_path(@article.user) %>
           </li>
           <li class="article-title">
             <%= link_to @article.user.username, user_path(@article.user) %>
@@ -18,9 +18,6 @@
       </div>
     </ul>
   <% end %>
-  <h4 class="description">
-    <strong>Description:</strong>
-  </h4>
   <hr>
   <%= simple_format(@article.description) %>
   <div class="article-actions">
