@@ -8,6 +8,7 @@ ruby "2.6.2"
 gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "~> 3.4", ">= 3.4.1"
+gem "bootstrap-will_paginate", "~> 1.0"
 gem "coffee-rails", "~> 4.2"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
@@ -17,6 +18,7 @@ gem "sass-rails", "~> 5.0"
 gem "sprockets-rails", require: "sprockets/railtie"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "will_paginate", "~> 3.1"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
