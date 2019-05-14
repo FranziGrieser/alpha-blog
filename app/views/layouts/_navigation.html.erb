@@ -44,9 +44,10 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li class="nav-link"><a href="#">Link</a></li>
-        <li class="dropdown nav-link">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-link"><%= link_to "Log out", logout_path, method: :delete %>
+        </li>
+        <!-- <li class="dropdown nav-link">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"
             role="button" aria-haspopup="true" aria-expanded="false">Dropdown
             <span class="caret"></span>
@@ -58,8 +59,8 @@
             <li role="separator" class="divider"></li>
             <li class="dropper"><a href="#">Separated link</a></li>
           </ul>
-        </li>
-      </ul> -->
+        </li> -->
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
