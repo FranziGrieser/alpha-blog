@@ -1,1 +1,6 @@
-Repository for complete Ruby on Rails course.
+### Basic Rails Blog App
+
+* users, articles, categories
+* authentication, authorization
+* user image using gravatar
+* tests via minitest
